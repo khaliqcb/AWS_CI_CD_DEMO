@@ -7,6 +7,10 @@ app.get('/health', (req, res) => {
     res.send("Health Check")
   });
 
+  app.get('/health1', (req, res) => {
+    res.send("Health1 Check")
+  });
+
 // Index route
 app.get('*', (req, res) => {
   res.send("Hello World!")
