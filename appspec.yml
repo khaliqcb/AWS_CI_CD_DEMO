@@ -3,6 +3,10 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/express-app
+permissions:
+  - object: /home/ubuntu/express-app
+    owner: ubuntu
+    group: ubuntu
 hook:
   ApplicationStop:
     - location: scripts/application_stop.sh
