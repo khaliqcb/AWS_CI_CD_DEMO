@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get('/status', (req, res) => {
-    let name = process.env.Name;
+    let name = process.env.APIKEY;
     res.send(`Status Check! ${name} `);
 });
 
