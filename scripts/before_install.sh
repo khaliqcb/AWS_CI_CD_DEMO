@@ -2,6 +2,7 @@
 
 #create our working directory if it doesnt exist
 DIR="/home/ubuntu/express-app"
+
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
 else
