@@ -15,6 +15,9 @@ app.get('/health', (req, res) => {
   res.send("Health Check!")
 });
 
+app.get('/health1', (req, res) => {
+  res.send("Health1 Check!")
+});
 
 // Start server
 const server = app.listen(port, () => {
