@@ -7,18 +7,6 @@ app.get('/status', (req, res) => {
     res.send('Status Check!');
 });
 
-app.get('/hello', (req, res) => {
-    res.send("Hello World!")
-});
-
-app.get('/health', (req, res) => {
-  res.send("Health Check!")
-});
-
-app.get('/health1', (req, res) => {
-  res.send("Health1 Check!")
-});
-
 // Start server
 const server = app.listen(port, () => {
   console.log("Server started on port " + port);
