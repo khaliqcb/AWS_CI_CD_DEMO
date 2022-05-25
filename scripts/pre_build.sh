@@ -4,6 +4,6 @@ echo Check Below
 echo $ENV_PATH
 rm $ENV_PATH
 echo '{
-    "MY_NAME='$MY_NAME'"
-    "PORT='$PORT'"
+    "this.DB_HOST='$MY_NAME'"
+    "this.DB_HOST='$PORT'"
 }' >> $ENV_PATH
