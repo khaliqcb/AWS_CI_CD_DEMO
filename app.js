@@ -4,6 +4,7 @@ require('dotenv').config()
 const app = express();
 const port = 4001;
 
+
 app.get('/status', (req, res) => {
     res.send('Status Check!');
 });
