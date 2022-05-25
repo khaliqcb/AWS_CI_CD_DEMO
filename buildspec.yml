@@ -8,8 +8,8 @@ phases:
     commands:
       - ls
       - echo Creating ENV...
-      - chmod +x ./build_scripts/pre_build.sh
-      - sh ./build_scripts/pre_build.sh
+      - chmod +x ./scripts/pre_build.sh
+      - sh ./scripts/pre_build.sh
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
