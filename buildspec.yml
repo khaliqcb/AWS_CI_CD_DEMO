@@ -6,7 +6,9 @@ phases:
     runtime-versions:
       nodejs: 12  
     commands:
-      - echo Installing Mocha...
+      - echo Creating ENV...
+      - chmod +x ./build_scripts/pre_build.sh
+      - sh ./build_scripts/pre_build.sh
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
