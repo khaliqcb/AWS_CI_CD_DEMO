@@ -10,7 +10,8 @@ app.get('/status', (req, res) => {
 app.get('/ENV', (req, res) => {
   let PORT = process.env.PORT;
   let NAME = process.env.MY_NAME;
-  res.send(`Status Check! ${PORT}, ${NAME}`);
+  let DEPLOYMENTGROUPNAME = process.env.DEPLOYMENT_GROUP_NAME;
+  res.send(`Status Check! ${PORT}, ${NAME}, ${DEPLOYMENTGROUPNAME}`);
 });
 
 // Start server
