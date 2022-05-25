@@ -7,6 +7,12 @@ app.get('/status', (req, res) => {
     res.send('Status Check!');
 });
 
+app.get('/ENV', (req, res) => {
+  let PORT = process.env.PORT;
+  let NAME = process.env.MY_NAME;
+  res.send(`Status Check! ${PORT}, ${NAME}`);
+});
+
 // Start server
 const server = app.listen(port, () => {
   console.log("Server started on port " + port);
