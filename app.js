@@ -10,8 +10,7 @@ app.get('/status', (req, res) => {
 });
 
 app.get('/ENV', (req, res) => {
-  //testing git protection rules
-  //II testing git protection rules
+  //token
   let PORT = process.env.PORT;
   let NAME = process.env.MY_NAME;
   let DEPLOYMENTGROUPNAME = process.env.DEPLOYMENT_GROUP_NAME;
