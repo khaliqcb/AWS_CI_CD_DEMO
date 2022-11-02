@@ -12,6 +12,8 @@ app.get('/status', (req, res) => {
 app.get('/ENV', (req, res) => {
   //token asdsdf
       //token asdsdf
+  //kdfkdsklfjl
+  ///dffdsfdfdf
   let PORT = process.env.PORT;
   //port
   let NAME = process.env.MY_NAME;
