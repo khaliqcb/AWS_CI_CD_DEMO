@@ -13,6 +13,7 @@ app.get('/ENV', (req, res) => {
   //token asdsdf
       //token asdsdf
   let PORT = process.env.PORT;
+  //port
   let NAME = process.env.MY_NAME;
   let DEPLOYMENTGROUPNAME = process.env.DEPLOYMENT_GROUP_NAME;
   res.send(`Status Check! ${PORT}, ${NAME}, ${DEPLOYMENTGROUPNAME}`);
