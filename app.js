@@ -10,7 +10,7 @@ app.get('/status', (req, res) => {
 });
 
 app.get('/ENV', (req, res) => {
-  //token
+  //removed
   let PORT = process.env.PORT;
   let NAME = process.env.MY_NAME;
   let DEPLOYMENTGROUPNAME = process.env.DEPLOYMENT_GROUP_NAME;
